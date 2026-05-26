@@ -151,7 +151,7 @@
 <section class="lang active" id="lang-uz" lang="uz">
 
 <h2>1. Kirish</h2>
-<p><strong>MIGO</strong> — O'zbekistondagi mobil marketplace ilovasi bo'lib, foydalanuvchilarga xalqaro bozorlardan (asosan Taobao) mahsulotlar sotib olish imkonini beradi. Ushbu Maxfiylik siyosati MIGO ilovasi sizning shaxsiy ma'lumotlaringizni qanday yig'ishi, ishlatishi, saqlashi va himoya qilishini tushuntiradi.</p>
+<p><strong>MIGO</strong> — O'zbekistondagi mobil marketplace ilovasi bo'lib, foydalanuvchilarga xalqaro bozorlardan mahsulotlar sotib olish imkonini beradi. Ushbu Maxfiylik siyosati MIGO ilovasi sizning shaxsiy ma'lumotlaringizni qanday yig'ishi, ishlatishi, saqlashi va himoya qilishini tushuntiradi.</p>
 <p>Ilovani ishlatib siz ushbu siyosatga rozilik bildirgan hisoblanasiz. Agar ba'zi shartlarga rozi bo'lmasangiz, iltimos ilovadan foydalanmang.</p>
 
 <h2>2. Yig'iladigan ma'lumotlar</h2>
@@ -199,18 +199,18 @@
 <p>MIGO quyidagi tashqi xizmatlardan foydalanadi:</p>
 <ul>
   <li><strong>Click (click.uz)</strong> — to'lovlarni qayta ishlash. Karta ma'lumoti Click'ga uzatiladi.</li>
-  <li><strong>Supabase (supabase.com)</strong> — ma'lumotlarni saqlash va autentifikatsiya. Ma'lumotlar shifrlangan tarzda saqlanadi.</li>
-  <li><strong>Taobao / RapidAPI</strong> — mahsulot kataloglariga ulanish. Sizning shaxsiy ma'lumotlaringiz Taobao'ga yuborilmaydi.</li>
-  <li><strong>Expo / Google</strong> — push bildirishnomalar va ilova yangilanishi.</li>
-  <li><strong>Google Translate API</strong> — mahsulot nomlarini tarjima qilish (faqat mahsulot matni, shaxsiy emas).</li>
+  <li><strong>Xavfsiz bulutli ma'lumotlar bazasi</strong> — foydalanuvchi va buyurtma ma'lumotlarini shifrlangan saqlash va autentifikatsiya.</li>
+  <li><strong>Xalqaro mahsulot kataloglari xizmatlari</strong> — mahsulot ro'yxati va tafsilotlarini olish. Sizning shaxsiy ma'lumotlaringiz bu xizmatlarga yuborilmaydi.</li>
+  <li><strong>Ilova infratuzilma xizmatlari</strong> — push bildirishnomalar va ilova yangilanishlarini yetkazib berish.</li>
+  <li><strong>Tarjima xizmati</strong> — mahsulot nomlarini avtomatik tarjima qilish (faqat mahsulot matni, shaxsiy ma'lumot emas).</li>
 </ul>
 
 <h2>6. Ma'lumot xavfsizligi</h2>
 <ul>
   <li>Barcha so'rovlar <strong>HTTPS/TLS</strong> orqali shifrlanadi.</li>
-  <li>Parol bcrypt yoki shunga o'xshash xeshlash algoritmi bilan saqlanadi.</li>
-  <li>Ma'lumotlar bazasiда <strong>Row Level Security (RLS)</strong> yoqilgan — har foydalanuvchi faqat o'z ma'lumotini ko'radi.</li>
-  <li>Maxfiy kalitlar (API tokens) Supabase Vault'да shifrlangan saqlanadi.</li>
+  <li>Parol kuchli xeshlash algoritmi bilan saqlanadi — hech kim (biz ham) ochiq matn ko'rmaydi.</li>
+  <li>Ma'lumotlar bazasiда <strong>qatlamli xavfsizlik</strong> yoqilgan — har foydalanuvchi faqat o'z ma'lumotini ko'radi.</li>
+  <li>Maxfiy kalitlar (API tokens) shifrlangan kalit saqlash tizimiда saqlanadi.</li>
 </ul>
 
 <h2>7. Sizning huquqlaringiz</h2>
@@ -251,7 +251,7 @@
 <section class="lang" id="lang-en" lang="en">
 
 <h2>1. Introduction</h2>
-<p><strong>MIGO</strong> is a mobile marketplace application based in Uzbekistan that allows users to purchase products from international markets (primarily Taobao). This Privacy Policy explains how MIGO collects, uses, stores and protects your personal information.</p>
+<p><strong>MIGO</strong> is a mobile marketplace application based in Uzbekistan that allows users to purchase products from international markets. This Privacy Policy explains how MIGO collects, uses, stores and protects your personal information.</p>
 <p>By using the app, you agree to this policy. If you do not agree with any part of it, please do not use the app.</p>
 
 <h2>2. Information We Collect</h2>
@@ -299,18 +299,18 @@
 <p>MIGO uses the following external services:</p>
 <ul>
   <li><strong>Click (click.uz)</strong> — payment processing. Card data is transmitted to Click.</li>
-  <li><strong>Supabase (supabase.com)</strong> — data storage and authentication. Data is stored encrypted.</li>
-  <li><strong>Taobao / RapidAPI</strong> — product catalog access. Your personal data is not sent to Taobao.</li>
-  <li><strong>Expo / Google</strong> — push notifications and app updates.</li>
-  <li><strong>Google Translate API</strong> — translating product names (product text only, not personal data).</li>
+  <li><strong>Secure cloud database</strong> — encrypted storage and authentication for user and order data.</li>
+  <li><strong>International product catalog services</strong> — fetching product listings and details. Your personal data is not sent to these services.</li>
+  <li><strong>App infrastructure services</strong> — push notifications and app update delivery.</li>
+  <li><strong>Translation service</strong> — automatic translation of product names (product text only, not personal data).</li>
 </ul>
 
 <h2>6. Data Security</h2>
 <ul>
   <li>All requests are encrypted via <strong>HTTPS/TLS</strong>.</li>
-  <li>Passwords are stored using bcrypt or a similar hashing algorithm.</li>
-  <li><strong>Row Level Security (RLS)</strong> is enabled on the database — each user sees only their own data.</li>
-  <li>Secret keys (API tokens) are stored encrypted in Supabase Vault.</li>
+  <li>Passwords are stored using a strong hashing algorithm — no one (including us) sees the plain text.</li>
+  <li><strong>Layered access controls</strong> are enforced on the database — each user can only access their own data.</li>
+  <li>Secret keys (API tokens) are kept in an encrypted key storage system.</li>
 </ul>
 
 <h2>7. Your Rights</h2>
@@ -351,7 +351,7 @@
 <section class="lang" id="lang-ru" lang="ru">
 
 <h2>1. Введение</h2>
-<p><strong>MIGO</strong> — мобильное маркетплейс-приложение в Узбекистане, позволяющее покупать товары с международных рынков (в основном Taobao). Настоящая Политика конфиденциальности описывает, как MIGO собирает, использует, хранит и защищает ваши персональные данные.</p>
+<p><strong>MIGO</strong> — мобильное маркетплейс-приложение в Узбекистане, позволяющее покупать товары с международных рынков. Настоящая Политика конфиденциальности описывает, как MIGO собирает, использует, хранит и защищает ваши персональные данные.</p>
 <p>Используя приложение, вы соглашаетесь с этой политикой. Если вы не согласны с какими-либо её положениями, пожалуйста, не используйте приложение.</p>
 
 <h2>2. Какие данные мы собираем</h2>
@@ -399,18 +399,18 @@
 <p>MIGO использует следующие внешние сервисы:</p>
 <ul>
   <li><strong>Click (click.uz)</strong> — обработка платежей. Данные карты передаются Click'у.</li>
-  <li><strong>Supabase (supabase.com)</strong> — хранение данных и аутентификация. Данные хранятся в зашифрованном виде.</li>
-  <li><strong>Taobao / RapidAPI</strong> — доступ к каталогу товаров. Ваши персональные данные не отправляются Taobao.</li>
-  <li><strong>Expo / Google</strong> — push-уведомления и обновления приложения.</li>
-  <li><strong>Google Translate API</strong> — перевод названий товаров (только текст товара, не персональные данные).</li>
+  <li><strong>Защищённая облачная база данных</strong> — зашифрованное хранение и аутентификация для данных пользователей и заказов.</li>
+  <li><strong>Сервисы международных каталогов товаров</strong> — получение списка и описаний товаров. Ваши персональные данные не отправляются этим сервисам.</li>
+  <li><strong>Инфраструктурные сервисы приложения</strong> — push-уведомления и доставка обновлений приложения.</li>
+  <li><strong>Сервис перевода</strong> — автоматический перевод названий товаров (только текст товара, не персональные данные).</li>
 </ul>
 
 <h2>6. Безопасность данных</h2>
 <ul>
   <li>Все запросы шифруются по <strong>HTTPS/TLS</strong>.</li>
-  <li>Пароли хранятся с использованием bcrypt или аналогичного алгоритма хеширования.</li>
-  <li>В базе данных включён <strong>Row Level Security (RLS)</strong> — каждый пользователь видит только свои данные.</li>
-  <li>Секретные ключи (API-токены) хранятся зашифрованными в Supabase Vault.</li>
+  <li>Пароли хранятся с использованием сильного алгоритма хеширования — никто (включая нас) не видит их в открытом виде.</li>
+  <li>В базе данных включена <strong>многоуровневая защита доступа</strong> — каждый пользователь видит только свои данные.</li>
+  <li>Секретные ключи (API-токены) хранятся в зашифрованном хранилище ключей.</li>
 </ul>
 
 <h2>7. Ваши права</h2>
